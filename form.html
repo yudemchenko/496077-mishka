@@ -6,7 +6,102 @@
   </head>
   <body>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Продвинутый HTML и CSS</a>».</p>
+    <header class="page-header">
+	  <a class="page-header__logo">
+        <img class="page-header__logo-image" src="http://placehold.it/150x100" width="" height="" alt="Магазин Mishka">
+	  </a>
+	  <nav class="main-nav">
+	    <button class="main-nav__toggle" type="button"></button>
+	    <ul class="main-nav__list site-list">
+		  <li class="site-list__item">
+            <a href="catalog.html">Каталог товаров</a>
+          </li>
+          <li class="site-list__item">
+            <a href="order.html">Вязание на заказ</a>
+          </li>
+          <li class="site-list__item">
+            <a href="#">Поиск по сайту</a>
+          </li>
+          <li class="site-list__item">
+            <a href="#">Корзина: пока пуста</a>
+          </li>
+		</ul>
+	  </nav>
+    </header>
+	
+	<main class="page-main">
+	  
+	  <h1 class="page-title">Вязание на заказ</h1>
+	  <p class="page-description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+	  
+	  <section class="product-type">
+	    <div class="product-type__wrapper">
+		  <form class="product-type__choice" action="https://echo.htmlacademy.ru" method="post">
+		    <label class="product-type__title">Тип</label>
+			  <input class="product-type__variant" type="radio" name="" checked>Аксессуар для интерьера</input>
+			  <input class="product-type__variant" type="radio" name="">Детская игрушка</input>
+		  </form>
+		</div>
+	  </section>
+	  
+	  <section class="product-color">
+	    <div class="product-color__wrapper">
+		  <form class="product-color__choice" action="https://echo.htmlacademy.ru" method="post">
+		    <label class="product-color__title">Цвет</label>
+			  <input class="product-color__variant" type="radio" name="" checked>Белый</input>
+			  <input class="product-color__variant" type="radio" name="" checked>Серый</input>
+			  <input class="product-color__variant" type="radio" name="">"Тиффани"</input>
+			  <input class="product-color__variant" type="radio" name="">Черный</input>
+			  <input class="product-color__variant" type="radio" name="">Розовый</input>
+			  <input class="product-color__variant" type="radio" name="">Оранжевый</input>
+		  </form>
+		</div>
+	  </section>
+	  
+	  <section class="customer-name">
+	    <div class="customer-name__wrapper">
+		  <form class="customer-name__choice" action="https://echo.htmlacademy.ru" method="post">
+		    <label class="customer-name__title">ФИО</label>
+			  <p class="customer-name__field-name">Имя:</p>
+			  <input class="customer-name__item" type="text" name=""></input>
+			  <p class="customer-name__field-name">Фамилия:</p>
+			  <input class="customer-name__item" type="text" name=""></input>
+			  <p class="customer-name__field-name">Отчество:</p>
+			  <input class="customer-name__item" type="text" name=""></input>
+		  </form>
+		</div>
+	  </section>
+	  
+	  <section class="customer-contact">
+	    <div class="customer-contact__wrapper">
+		  <form class="customer-contact__choice" action="https://echo.htmlacademy.ru" method="post">
+		    <label class="customer-contact__title">Тел</label>
+			  <input class="customer-contact__item" type="text" name=""></input>
+			<label class="customer-contact__title">E-MAIL</label>
+			  <input class="customer-contact__item" type="text" name=""></input>
+			<label class="customer-contact__title">Доп</label>
+			  <textarea class="customer-contact__comment" rows="5"></textarea>
+		  </form>
+		</div>
+	  </section>
+	  
+	  <small class="additional-info">Поля обязательны для заполнения</small>
+	  
+	  <button class="product-card__order" type="button">Отправить заказ</button>
+	 
+	</main>
+	
+	<footer class="page-footer">
+	  <div class="social-link">
+		<a class="social-link__instagram"><img class="social-link__instagram-icon" src="http://placehold.it/150x100"></a>
+		<a class="social-link__facebook"><img class="social-link__facebook-icon" src="http://placehold.it/150x100"></a>
+		<a class="social-link__twitter"><img class="social-link__twitter-icon" src="http://placehold.it/150x100"></a>
+	  </div>
+	  <div class="developed-by">
+		<b class="developed-by__text">Разработано</b>
+		<img class="developed-by__icon" src="http://placehold.it/150x100">
+	  </div>
+	</footer>
 
   </body>
 </html>

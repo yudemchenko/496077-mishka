@@ -11,7 +11,21 @@
         <img class="page-header__logo-image" src="http://placehold.it/150x100" width="" height="" alt="Магазин Mishka">
 	  </a>
 	  <nav class="main-nav">
-        <button class="main-nav__toggle" type="button"></button>
+	    <button class="main-nav__toggle" type="button"></button>
+	    <ul class="main-nav__list site-list">
+		  <li class="site-list__item">
+            <a href="catalog.html">Каталог товаров</a>
+          </li>
+          <li class="site-list__item">
+            <a href="order.html">Вязание на заказ</a>
+          </li>
+          <li class="site-list__item">
+            <a href="#">Поиск по сайту</a>
+          </li>
+          <li class="site-list__item">
+            <a href="#">Корзина: пока пуста</a>
+          </li>
+		</ul>
 	  </nav>
     </header>
 	
@@ -22,14 +36,14 @@
 	  <section class="assortment">
 	    <a class="assortment__link" href="#">
 	      <div class="assortment__item assortment__item--interior">
-		    <p class="assortment__item--name"></p>
-		    <img class="assortment__item--icon" src="http://placehold.it/150x100" width="" height="" alt="">
+		    <p class="assortment__item assortment__item--name"></p>
+		    <img class="assortment__item assortment__item--icon" src="http://placehold.it/150x100" width="" height="" alt="">
 		  </div>
 		</a>
 	    <a class="assortment__link" href="#">
 	      <div class="assortment__item assortment__item--toy">
-		    <p class="assortment__item--name"></p>
-		    <img class="assortment__item--icon" src="http://placehold.it/150x100" width="" height="" alt="">
+		    <p class="assortment__item assortment__item--name"></p>
+		    <img class="assortment__item assortment__item--icon" src="http://placehold.it/150x100" width="" height="" alt="">
 		  </div>
 		</a>
 	  </section>
@@ -38,21 +52,33 @@
 	  
 	    <h2 class="product-card__title">Вязаные корзинки</h2>
 		
-		<h3 class="product-card--top">Товар недели</h3>
+		<h3 class="product-top">Товар недели</h3>
 		<p class="product-card__description"Экологически чистая пряжа, ручная работа. Доступна в шести расцветках, и трех размерах.</p>
 		
 		<div class="product-card__characteristics">
-		  <p class="product-card__characteristics--color">Цвет: "Тиффани"/серый</p>
+		  <p class="product-card__characteristics product-card__characteristics--color">Цвет: "Тиффани"/серый</p>
 		  <hr>
-		  <p class="product-card__characteristics--width">Диаметр: 25 см</p>
+		  <p class="product-card__characteristics product-card__characteristics--width">Диаметр: 25 см</p>
 		  <hr>
-		  <p class="product-card__characteristics--height">Высота: 15 см</p>
+		  <p class="product-card__characteristics product-card__characteristics--height">Высота: 15 см</p>
 		</div>
 		
 		<img class="product-card__foto" src="http://placehold.it/150x100" width="" height="" alt="">
 		<p class="product-card__price">Цена: 990 руб.</p>
 		
-		<button class="product-card__order">Заказать</button>
+		<button class="product-card__order" type="button">Заказать</button>
+		<!--модальное окно-->
+		<div class="add-to-order">
+		
+		  <h1 class="add-to-order__title">Добавить в корзину</h1>
+		  
+		  <p class="add-to-order__description"></p>
+		  <button class="add-to-order__size" type="button">S</button>
+		  <button class="add-to-order__size" type="button">M</button>
+		  <button class="add-to-order__size" type="button">L</button>
+		  <button class="add-to-order__buy" type="button">Добавить</button>
+		  
+		</div>
 	  </section>
 	  
 	  <section class="about-us">
@@ -97,8 +123,8 @@
 		  <p class="rewiew__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
 		  <b class="rewiew__caption">Анастасия Красильникова</b>
 		  <p class="rewiew__mail">@misssssiskras</p>
-		  <button class="rewiew--left" type="button"></button>
-		  <button class="rewiew--right" type="button"></button>
+		  <button class="rewiew__left" type="button"></button>
+		  <button class="rewiew__right" type="button"></button>
 		  <button class="contact-us" type="button">Написать</button>
 		</div>
 	  </section>
@@ -117,19 +143,19 @@
 	  </section>
 	  
 	  <button class="contact-us" type="button">Напишите нам:</button>
-	  
-	  <footer class="page-footer">
-	    <div class="social-link">
-		  <a class="social-link__instagram"><img class="social-link__instagram--icon" src="http://placehold.it/150x100"></a>
-		  <a class="social-link__facebook"><img class="social-link__facebook--icon" src="http://placehold.it/150x100"></a>
-		  <a class="social-link__twitter"><img class="social-link__twitter--icon" src="http://placehold.it/150x100"></a>
-		</div>
-		<div class="developed-by">
-		  <b class="developed-by__text">Разработано</b>
-		  <img class="developed-by__icon" src="http://placehold.it/150x100">
-		</div>
-	  </footer>
 	</main>
+	
+	<footer class="page-footer">
+	  <div class="social-link">
+		<a class="social-link__instagram"><img class="social-link__instagram-icon" src="http://placehold.it/150x100"></a>
+		<a class="social-link__facebook"><img class="social-link__facebook-icon" src="http://placehold.it/150x100"></a>
+		<a class="social-link__twitter"><img class="social-link__twitter-icon" src="http://placehold.it/150x100"></a>
+	  </div>
+	  <div class="developed-by">
+		<b class="developed-by__text">Разработано</b>
+		<img class="developed-by__icon" src="http://placehold.it/150x100">
+	  </div>
+	</footer>
 	
   </body>
 </html>
