@@ -11,7 +11,7 @@
         <img class="page-header__logo-image" src="http://placehold.it/150x100" width="" height="" alt="Магазин Mishka">
 	  </a>
 	  <nav class="main-nav">
-	    <button class="main-nav__toggle" type="button"></button>
+	    <button class="main-nav__toggle"></button>
 	    <ul class="main-nav__list site-list">
 		  <li class="site-list__item">
             <a href="catalog.html">Каталог товаров</a>
@@ -34,61 +34,57 @@
 	  <h1 class="page-title">Вязание на заказ</h1>
 	  <p class="page-description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
 	  
-	  <section class="product-type">
-	    <div class="product-type__wrapper">
-		  <form class="product-type__choice" action="https://echo.htmlacademy.ru" method="post">
-		    <label class="product-type__title">Тип</label>
-			  <input class="product-type__variant" type="radio" name="" checked>Аксессуар для интерьера</input>
-			  <input class="product-type__variant" type="radio" name="">Детская игрушка</input>
-		  </form>
-		</div>
-	  </section>
+	  <form class="made-order" action="https://echo.htmlacademy.ru" method="post">
+	    <fieldset class="product-type">
+	      <div class="product-type__wrapper">
+		    <legend class="product-type__title">Тип</legend>
+			  <input class="product-type__variant" type="radio" name="interior" checked>Аксессуар для интерьера</input>
+			  <input class="product-type__variant" type="radio" name="toy">Детская игрушка</input>
+		  </div>
+	    </fieldset>
 	  
-	  <section class="product-color">
-	    <div class="product-color__wrapper">
-		  <form class="product-color__choice" action="https://echo.htmlacademy.ru" method="post">
-		    <label class="product-color__title">Цвет</label>
-			  <input class="product-color__variant" type="radio" name="" checked>Белый</input>
-			  <input class="product-color__variant" type="radio" name="" checked>Серый</input>
-			  <input class="product-color__variant" type="radio" name="">"Тиффани"</input>
-			  <input class="product-color__variant" type="radio" name="">Черный</input>
-			  <input class="product-color__variant" type="radio" name="">Розовый</input>
-			  <input class="product-color__variant" type="radio" name="">Оранжевый</input>
-		  </form>
-		</div>
-	  </section>
+	    <fieldset class="product-color">
+	      <div class="product-color__wrapper">
+		    <legend class="product-color__title">Цвет</legend>
+			  <input class="product-color__variant" type="checkbox" name="white" checked>Белый</input>
+			  <input class="product-color__variant" type="checkbox" name="gray" checked>Серый</input>
+			  <input class="product-color__variant" type="checkbox" name="tiffany">"Тиффани"</input>
+			  <input class="product-color__variant" type="checkbox" name="black">Черный</input>
+			  <input class="product-color__variant" type="checkbox" name="pink">Розовый</input>
+			  <input class="product-color__variant" type="checkbox" name="orange">Оранжевый</input>
+		  </div>
+	    </fieldset>
 	  
-	  <section class="customer-name">
-	    <div class="customer-name__wrapper">
-		  <form class="customer-name__choice" action="https://echo.htmlacademy.ru" method="post">
-		    <label class="customer-name__title">ФИО</label>
-			  <p class="customer-name__field-name">Имя:</p>
-			  <input class="customer-name__item" type="text" name=""></input>
-			  <p class="customer-name__field-name">Фамилия:</p>
-			  <input class="customer-name__item" type="text" name=""></input>
-			  <p class="customer-name__field-name">Отчество:</p>
-			  <input class="customer-name__item" type="text" name=""></input>
-		  </form>
-		</div>
-	  </section>
+	    <fieldset class="customer-name">
+	      <div class="customer-name__wrapper">
+		    <legend class="customer-name__title">ФИО</legend>
+			
+			  <label class="customer-name__field-name" for="name">Имя:</label>
+			  <input class="customer-name__item" type="text" name="name" id="name" required placeholder="Введите ваше имя*"></input>
+			  
+			  <label class="customer-name__field-name" for="surname">Фамилия:</label>
+			  <input class="customer-name__item" type="text" name="surname" id="surname" required placeholder="Укажите фамилию*"></input>
+			  
+			  <label class="customer-name__field-name" for="second-name">Отчество:</label>
+			  <input class="customer-name__item" type="text" name="second-name" id="second-name" placeholder="Отчество, если желаете"></input>
+		  </div>
+	    </fieldset>
 	  
-	  <section class="customer-contact">
-	    <div class="customer-contact__wrapper">
-		  <form class="customer-contact__choice" action="https://echo.htmlacademy.ru" method="post">
+	    <section class="customer-contact">
+	      <div class="customer-contact__wrapper">
 		    <label class="customer-contact__title">Тел</label>
-			  <input class="customer-contact__item" type="text" name=""></input>
+			  <input class="customer-contact__item" type="tel" name="tel" placeholder="+7 XXX XX XX*" required></input>
 			<label class="customer-contact__title">E-MAIL</label>
-			  <input class="customer-contact__item" type="text" name=""></input>
+			  <input class="customer-contact__item" type="email" name="email" placeholder="Ваш Email*" required></input>
 			<label class="customer-contact__title">Доп</label>
-			  <textarea class="customer-contact__comment" rows="5"></textarea>
-		  </form>
-		</div>
-	  </section>
+			  <textarea class="customer-contact__comment" rows="5">Опишите все ваши пожелания к заказу</textarea>
+		  </div>
+	    </section>
 	  
-	  <small class="additional-info">Поля обязательны для заполнения</small>
+	    <small class="additional-info">Поля обязательны для заполнения</small>
 	  
-	  <button class="product-card__order" type="button">Отправить заказ</button>
-	 
+	    <button class="product-card__order">Отправить заказ</button>
+	  </form>
 	</main>
 	
 	<footer class="page-footer">
