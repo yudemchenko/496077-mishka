@@ -7,13 +7,13 @@
   <body>
 
     <header class="page-header">
-	  <a class="page-header__logo">
+    <a class="page-header__logo">
         <img class="page-header__logo-image" src="http://placehold.it/150x100" width="" height="" alt="Магазин Mishka">
-	  </a>
-	  <nav class="main-nav">
-	    <button class="main-nav__toggle"></button>
-	    <ul class="main-nav__list site-list">
-		  <li class="site-list__item">
+    </a>
+    <nav class="main-nav">
+      <button class="main-nav__toggle"></button>
+      <ul class="main-nav__list site-list">
+      <li class="site-list__item">
             <a href="catalog.html">Каталог товаров</a>
           </li>
           <li class="site-list__item">
@@ -25,79 +25,76 @@
           <li class="site-list__item">
             <a href="#">Корзина: пока пуста</a>
           </li>
-		</ul>
-	  </nav>
+    </ul>
+    </nav>
     </header>
-	
-	<main class="page-main">
-	  
-	  <h1 class="page-title">Вязание на заказ</h1>
-	  <p class="page-description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
-	  
-	  <form class="made-order" action="https://echo.htmlacademy.ru" method="post">
-	    <fieldset class="product-type">
-	      <div class="product-type__wrapper">
-		    <legend class="product-type__title">Тип</legend>
-			  <input class="product-type__variant" type="radio" name="product-category" checked>Аксессуар для интерьера</input>
-			  <input class="product-type__variant" type="radio" name="product-category">Детская игрушка</input>
-		  </div>
-	    </fieldset>
-	  
-	    <fieldset class="product-color">
-	      <div class="product-color__wrapper">
-		    <legend class="product-color__title">Цвет</legend>
-			  <input class="product-color__variant" type="checkbox" name="white" checked>Белый</input>
-			  <input class="product-color__variant" type="checkbox" name="gray" checked>Серый</input>
-			  <input class="product-color__variant" type="checkbox" name="tiffany">"Тиффани"</input>
-			  <input class="product-color__variant" type="checkbox" name="black">Черный</input>
-			  <input class="product-color__variant" type="checkbox" name="pink">Розовый</input>
-			  <input class="product-color__variant" type="checkbox" name="orange">Оранжевый</input>
-		  </div>
-	    </fieldset>
-	  
-	    <fieldset class="customer-name">
-	      <div class="customer-name__wrapper">
-		    <legend class="customer-name__title">ФИО</legend>
-			
-			  <label class="customer-name__field-name" for="name">Имя:</label>
-			  <input class="customer-name__item" type="text" name="name" id="name" required placeholder="Введите ваше имя*"></input>
-			  
-			  <label class="customer-name__field-name" for="surname">Фамилия:</label>
-			  <input class="customer-name__item" type="text" name="surname" id="surname" required placeholder="Укажите фамилию*"></input>
-			  
-			  <label class="customer-name__field-name" for="second-name">Отчество:</label>
-			  <input class="customer-name__item" type="text" name="second-name" id="second-name" placeholder="Отчество, если желаете"></input>
-		  </div>
-	    </fieldset>
-	  
-	    <section class="customer-contact">
-	      <div class="customer-contact__wrapper">
-		    <label class="customer-contact__title">Тел</label>
-			  <input class="customer-contact__item" type="tel" name="tel" placeholder="+7 XXX XX XX*" required></input>
-			<label class="customer-contact__title">E-MAIL</label>
-			  <input class="customer-contact__item" type="email" name="email" placeholder="Ваш Email*" required></input>
-			<label class="customer-contact__title">Доп</label>
-			  <textarea class="customer-contact__comment" rows="5">Опишите все ваши пожелания к заказу</textarea>
-		  </div>
-	    </section>
-	  
-	    <small class="additional-info">Поля обязательны для заполнения</small>
-	  
-	    <button class="product-card__order" type="submit">Отправить заказ</button>
-	  </form>
-	</main>
-	
-	<footer class="page-footer">
-	  <div class="social-link">
-		<a class="social-link__instagram"><img class="social-link__instagram-icon" src="http://placehold.it/150x100"></a>
-		<a class="social-link__facebook"><img class="social-link__facebook-icon" src="http://placehold.it/150x100"></a>
-		<a class="social-link__twitter"><img class="social-link__twitter-icon" src="http://placehold.it/150x100"></a>
-	  </div>
-	  <div class="developed-by">
-		<b class="developed-by__text">Разработано</b>
-		<img class="developed-by__icon" src="http://placehold.it/150x100">
-	  </div>
-	</footer>
+
+  <main class="page-main">
+
+    <h1 class="page-title">Вязание на заказ</h1>
+    <p class="page-description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+
+    <form class="made-order" action="https://echo.htmlacademy.ru" method="post">
+      <fieldset class="product-type">
+        <div class="product-type__wrapper">
+        <legend class="product-type__title">Тип</legend>
+        <input class="product-type__variant" type="radio" name="product-category" checked>Аксессуар для интерьера</input>
+        <input class="product-type__variant" type="radio" name="product-category">Детская игрушка</input>
+      </div>
+      </fieldset>
+
+      <fieldset class="product-color">
+        <div class="product-color__wrapper">
+        <legend class="product-color__title">Цвет</legend>
+        <input class="product-color__variant" type="checkbox" name="white" checked>Белый</input>
+        <input class="product-color__variant" type="checkbox" name="gray" checked>Серый</input>
+        <input class="product-color__variant" type="checkbox" name="tiffany">"Тиффани"</input>
+        <input class="product-color__variant" type="checkbox" name="black">Черный</input>
+        <input class="product-color__variant" type="checkbox" name="pink">Розовый</input>
+        <input class="product-color__variant" type="checkbox" name="orange">Оранжевый</input>
+      </div>
+      </fieldset>
+
+      <fieldset class="customer-name">
+        <div class="customer-name__wrapper">
+          <legend class="customer-name__title">ФИО</legend>
+          <label class="customer-name__field-name" for="name">Имя:</label>
+          <input class="customer-name__item" type="text" name="name" id="name" required placeholder="Введите ваше имя*"></input>
+          <label class="customer-name__field-name" for="surname">Фамилия:</label>
+          <input class="customer-name__item" type="text" name="surname" id="surname" required placeholder="Укажите фамилию*"></input>
+          <label class="customer-name__field-name" for="second-name">Отчество:</label>
+          <input class="customer-name__item" type="text" name="second-name" id="second-name" placeholder="Отчество, если желаете"></input>
+        </div>
+      </fieldset>
+
+      <section class="customer-contact">
+        <div class="customer-contact__wrapper">
+        <label class="customer-contact__title">Тел</label>
+        <input class="customer-contact__item" type="tel" name="tel" placeholder="+7 XXX XX XX*" required></input>
+        <label class="customer-contact__title">E-MAIL</label>
+        <input class="customer-contact__item" type="email" name="email" placeholder="Ваш Email*" required></input>
+        <label class="customer-contact__title">Доп</label>
+        <textarea class="customer-contact__comment" rows="5">Опишите все ваши пожелания к заказу</textarea>
+        </div>
+      </section>
+
+      <small class="additional-info">Поля обязательны для заполнения</small>
+
+      <button class="product-card__order" type="submit">Отправить заказ</button>
+    </form>
+  </main>
+
+  <footer class="page-footer">
+    <div class="social-link">
+    <a class="social-link__instagram"><img class="social-link__instagram-icon" src="http://placehold.it/150x100"></a>
+    <a class="social-link__facebook"><img class="social-link__facebook-icon" src="http://placehold.it/150x100"></a>
+    <a class="social-link__twitter"><img class="social-link__twitter-icon" src="http://placehold.it/150x100"></a>
+    </div>
+    <div class="developed-by">
+    <b class="developed-by__text">Разработано</b>
+    <img class="developed-by__icon" src="http://placehold.it/150x100">
+    </div>
+  </footer>
 
   </body>
 </html>
