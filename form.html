@@ -4,16 +4,16 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Мишка</title>
-    <link rel="stylesheet" href="\css\style.css">
+    <link rel="stylesheet" href="/css/style.css">
   </head>
   <body>
 
     <header class="page-header">
     <a class="page-header__logo">
-        <img class="page-header__logo-image" src="img\logo-mobile.svg" alt="Магазин Mishka">
+        <img class="page-header__logo-image" src="img/logo-mobile.svg" alt="Магазин Mishka">
     </a>
     <nav class="main-nav">
-      <button class="main-nav__toggle"><img src="img\icon-menu-open.svg"></button>
+      <button class="main-nav__toggle"><img src="img/icon-menu-open.svg" alt=""></button>
       <ul class="main-nav__list site-list">
       <li class="site-list__item">
             <a class="site-list__link" href="catalog.html">Каталог товаров</a>
@@ -39,42 +39,41 @@
 
     <form class="made-order" action="https://echo.htmlacademy.ru" method="post">
       <fieldset class="product-type">
-        <label class="product-type__title">Тип
-        <input class="product-type__variant" type="radio" name="product-category" checked>Аксессуар для интерьера</input>
-        <input class="product-type__variant" type="radio" name="product-category">Детская игрушка</input>
-        </label>
+        <legend class="product-type__legend">Тип</legend>
+        <input class="product-type__variant" type="radio" name="product-category" id="product-interior" checked><label class= "product-type__category" for="product-interior">Аксессуар для интерьера</label>
+        <input class="product-type__variant" type="radio" name="product-category" id="product-toy"><label class="product-type__category" for="product-toy">Детская игрушка</label>
       </fieldset>
 
       <fieldset class="product-color">
-        <legend class="product-color__title">Цвет</legend>
-        <input class="product-color__variant" type="checkbox" name="white" checked>Белый</input>
-        <input class="product-color__variant" type="checkbox" name="gray" checked>Серый</input>
-        <input class="product-color__variant" type="checkbox" name="tiffany">"Тиффани"</input>
-        <input class="product-color__variant" type="checkbox" name="black">Черный</input>
-        <input class="product-color__variant" type="checkbox" name="pink">Розовый</input>
-        <input class="product-color__variant" type="checkbox" name="orange">Оранжевый</input>
+        <legend class="product-color__legend">Цвет</legend>
+        <input class="product-color__variant" type="checkbox" name="white" id="variant-white" checked><label class="product-color__choice" for="variant-white">Белый</label>
+        <input class="product-color__variant" type="checkbox" name="gray" id="variant-gray" checked><label class="product-color__choice" for="variant-gray">Серый</label>
+        <input class="product-color__variant" type="checkbox" name="tiffany" id="variant-tiffany"><label class="product-color__choice" for="variant-tiffany">"Тиффани"</label>
+        <input class="product-color__variant" type="checkbox" name="black" id="variant-black"><label class="product-color__choice" for="variant-black">Черный</label>
+        <input class="product-color__variant" type="checkbox" name="pink" id="variant-pink"><label class="product-color__choice" for="variant-pink">Розовый</label>
+        <input class="product-color__variant" type="checkbox" name="orange" id="variant-orange"><label class="product-color__choice" for="variant-orange">Оранжевый</label>
       </fieldset>
 
       <fieldset class="customer-name">
           <legend class="customer-name__title">ФИО</legend>
           <label class="customer-name__field-name" for="name">Имя:</label>
-          <input class="customer-name__item" type="text" name="name" id="name" required placeholder="Введите ваше имя*"></input>
+          <input class="customer-name__item" type="text" name="name" id="name" required placeholder="Введите ваше имя*">
           <label class="customer-name__field-name" for="surname">Фамилия:</label>
-          <input class="customer-name__item" type="text" name="surname" id="surname" required placeholder="Укажите фамилию*"></input>
+          <input class="customer-name__item" type="text" name="surname" id="surname" required placeholder="Укажите фамилию*">
           <label class="customer-name__field-name" for="second-name">Отчество:</label>
-          <input class="customer-name__item" type="text" name="second-name" id="second-name" placeholder="Отчество, если желаете"></input>
+          <input class="customer-name__item" type="text" name="second-name" id="second-name" placeholder="Отчество, если желаете">
       </fieldset>
 
       <section class="customer-contact">
-        <label class="customer-contact__title">Тел</label>
-        <input class="customer-contact__item" type="tel" name="tel" placeholder="+7 XXX XX XX*" required></input>
-        <label class="customer-contact__title">E-MAIL</label>
-        <input class="customer-contact__item" type="email" name="email" placeholder="Ваш Email*" required></input>
-        <label class="customer-contact__title">Доп</label>
-        <textarea class="customer-contact__comment" rows="5">Опишите все ваши пожелания к заказу</textarea>
+        <label class="customer-contact__title" for="contact-tel">Тел</label>
+        <input class="customer-contact__item" type="tel" name="tel" id="contact-tel" placeholder="+7 XXX XX XX*" required>
+        <label class="customer-contact__title" for="contact-mail">E-MAIL</label>
+        <input class="customer-contact__item" type="email" name="email" id="contact-mail" placeholder="Ваш Email*" required>
+        <label class="customer-contact__title" for="contact-add-info">Доп</label>
+        <textarea class="customer-contact__comment" rows="5" id="contact-add-info">Опишите все ваши пожелания к заказу</textarea>
       </section>
 
-      <small class="additional-info">Поля обязательны для заполнения</small>
+      <small class="additional-info">* Поля обязательны для заполнения</small>
 
       <button class="product-card__order" type="submit">Отправить заказ</button>
     </form>
@@ -82,14 +81,14 @@
 
   <footer class="page-footer">
     <div class="social-link">
-      <a class="social-link__instagram"><img class="social-link__instagram-icon" src="img\icon-insta.svg"></a>
-      <a class="social-link__facebook"><img class="social-link__facebook-icon" src="img\icon-fb.svg"></a>
-      <a class="social-link__twitter"><img class="social-link__twitter-icon" src="img\icon-twitter.svg"></a>
+      <a class="social-link__instagram"><img class="social-link__instagram-icon" src="img/icon-insta.svg" alt=""></a>
+      <a class="social-link__facebook"><img class="social-link__facebook-icon" src="img/icon-fb.svg" alt=""></a>
+      <a class="social-link__twitter"><img class="social-link__twitter-icon" src="img/icon-twitter.svg" alt=""></a>
     </div>
     <hr>
     <div class="developed-by">
       <b class="developed-by__text">Разработано</b>
-      <img class="developed-by__icon" src="img\htmlacademy.svg">
+      <img class="developed-by__icon" src="img/htmlacademy.svg" alt="">
     </div>
   </footer>
 
