@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Мишка</title>
     <link rel="stylesheet" href="\css\style.css">
   </head>
@@ -38,15 +39,13 @@
 
     <form class="made-order" action="https://echo.htmlacademy.ru" method="post">
       <fieldset class="product-type">
-        <div class="product-type__wrapper">
-        <legend class="product-type__title">Тип</legend>
+        <label class="product-type__title">Тип
         <input class="product-type__variant" type="radio" name="product-category" checked>Аксессуар для интерьера</input>
         <input class="product-type__variant" type="radio" name="product-category">Детская игрушка</input>
-      </div>
+        </label>
       </fieldset>
 
       <fieldset class="product-color">
-        <div class="product-color__wrapper">
         <legend class="product-color__title">Цвет</legend>
         <input class="product-color__variant" type="checkbox" name="white" checked>Белый</input>
         <input class="product-color__variant" type="checkbox" name="gray" checked>Серый</input>
@@ -54,11 +53,9 @@
         <input class="product-color__variant" type="checkbox" name="black">Черный</input>
         <input class="product-color__variant" type="checkbox" name="pink">Розовый</input>
         <input class="product-color__variant" type="checkbox" name="orange">Оранжевый</input>
-      </div>
       </fieldset>
 
       <fieldset class="customer-name">
-        <div class="customer-name__wrapper">
           <legend class="customer-name__title">ФИО</legend>
           <label class="customer-name__field-name" for="name">Имя:</label>
           <input class="customer-name__item" type="text" name="name" id="name" required placeholder="Введите ваше имя*"></input>
@@ -66,18 +63,15 @@
           <input class="customer-name__item" type="text" name="surname" id="surname" required placeholder="Укажите фамилию*"></input>
           <label class="customer-name__field-name" for="second-name">Отчество:</label>
           <input class="customer-name__item" type="text" name="second-name" id="second-name" placeholder="Отчество, если желаете"></input>
-        </div>
       </fieldset>
 
       <section class="customer-contact">
-        <div class="customer-contact__wrapper">
         <label class="customer-contact__title">Тел</label>
         <input class="customer-contact__item" type="tel" name="tel" placeholder="+7 XXX XX XX*" required></input>
         <label class="customer-contact__title">E-MAIL</label>
         <input class="customer-contact__item" type="email" name="email" placeholder="Ваш Email*" required></input>
         <label class="customer-contact__title">Доп</label>
         <textarea class="customer-contact__comment" rows="5">Опишите все ваши пожелания к заказу</textarea>
-        </div>
       </section>
 
       <small class="additional-info">Поля обязательны для заполнения</small>
