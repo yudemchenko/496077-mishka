@@ -9,23 +9,31 @@
   <body>
 
     <header class="page-header">
-      <a class="page-header__logo">
-        <img class="page-header__logo-image" src="img/logo-mobile.svg" alt="Магазин Mishka">
-      </a>
       <nav class="main-nav">
-        <button class="main-nav__toggle"><img src="img/icon-menu-open.svg" alt="Меню"></button>
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item">
-            <a class="site-list__link" href="catalog.html">Каталог товаров</a>
+        <ul class="main-nav__list main-nav">
+          <li class="main-nav__logo-wrapper">
+                <a class="main-nav__logo">
+                <img class="main-nav__logo-image" src="img/logo-mobile.svg" alt="Магазин Mishka">
+                </a>
+                <button class="main-nav__toggle"><img src="img/icon-menu-open.svg" alt="Меню"></button>
           </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="form.html">Вязание на заказ</a>
+          <li class="main-nav__item main-nav--catalog">
+            <a class="main-nav__link" href="catalog.html">Каталог товаров</a>
           </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="#">Поиск по сайту</a>
+          <li class="main-nav__item main-nav--knitting">
+            <a class="main-nav__link" href="form.html">Вязание на заказ</a>
           </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="#">Корзина: пока пуста</a>
+          <li class="main-nav__item main-nav--search-full">
+            <a class="main-nav__link main-nav--search-img" href="#">
+              <img class="main-nav__search" src="img/icon-search.svg" alt="Поиск">
+            </a>
+            <a class="main-nav__link main-nav--search" href="#">Поиск по сайту</a>
+          </li>
+          <li class="main-nav__item main-nav--basket">
+            <a class="main-nav__link" href="#">Корзина: пока пуста</a>
+          </li>
+          <li class="main-nav__item main-nav--receive">
+            Бесплатная доставка по России
           </li>
         </ul>
       </nav>
@@ -39,13 +47,13 @@
         <a class="assortment__link" href="#">
           <div class="assortment__item assortment__item--interior">
             <p class="assortment__item assortment__item--name">Предметы интерьера</p>
-            <img class="assortment__item assortment__item--icon" src="img/icon-interior.svg" alt="">
+            <img class="assortment__item assortment__item--icon" src="img/icon-interior.svg" alt="Интерьер">
           </div>
         </a>
         <a class="assortment__link" href="#">
           <div class="assortment__item assortment__item--toy">
             <p class="assortment__item assortment__item--name">Детские игрушки</p>
-            <img class="assortment__item assortment__item--icon" src="img/icon-toy.svg" alt="">
+            <img class="assortment__item assortment__item--icon" src="img/icon-toy.svg" alt="Игрушки">
           </div>
         </a>
       </section>
@@ -89,27 +97,27 @@
 
           <ul class="about-us__list">
             <li class="about-us__item">
-              <img class="about-us__icon" src="img/icon-feature-flower.svg" alt="">
+              <img class="about-us__icon" src="img/icon-feature-flower.svg" alt="Цветок">
               <p class="about-us__description">Экологически чистые материалы</p>
             </li>
             <li class="about-us__item">
-              <img class="about-us__icon" src="img/icon-feature-money.svg" alt="">
+              <img class="about-us__icon" src="img/icon-feature-money.svg" alt="Выгодная цена">
               <p class="about-us__description">Скандинавский стиль по российской цене</p>
             </li>
             <li class="about-us__item">
-              <img class="about-us__icon" src="img/icon-feature-heart.svg" alt="">
+              <img class="about-us__icon" src="img/icon-feature-heart.svg" alt="Лайки">
               <p class="about-us__description">Увеличивает лайки на фотографиях</p>
             </li>
             <li class="about-us__item">
-              <img class="about-us__icon" src="img/icon-feature-ball.svg" alt="">
+              <img class="about-us__icon" src="img/icon-feature-ball.svg" alt="Ручная работа">
               <p class="about-us__description">Связано вручную с любовью и умилением</p>
             </li>
             <li class="about-us__item">
-              <img class="about-us__icon" src="img/icon-feature-rocket.svg" alt="">
+              <img class="about-us__icon" src="img/icon-feature-rocket.svg" alt="Ракета">
               <p class="about-us__description">Поддержка отечественного производителя</p>
             </li>
             <li class="about-us__item">
-              <img class="about-us__icon" src="img/icon-feature-gift.svg" alt="">
+              <img class="about-us__icon" src="img/icon-feature-gift.svg" alt="Подарок">
               <p class="about-us__description">Поставляется в подарочной упаковке</p>
             </li>
           </ul>
@@ -122,8 +130,8 @@
           <p class="rewiew__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
           <b class="rewiew__caption">Анастасия Красильникова</b>
           <p class="rewiew__mail">@misssssiskras</p>
-          <button class="rewiew__left"><img class="rewiew__left--icon" src="img/icon-left-arrow.svg" alt=""></button>
-          <button class="rewiew__right"><img class="rewiew__right--icon" src="img/icon-right-arrow.svg" alt=""></button>
+          <button class="rewiew__left"><img class="rewiew__left--icon" src="img/icon-left-arrow.svg" alt="Лево"></button>
+          <button class="rewiew__right"><img class="rewiew__right--icon" src="img/icon-right-arrow.svg" alt="Право"></button>
       </section>
 
       <button class="contact-us">Написать</button>
@@ -145,9 +153,9 @@
 
     <footer class="page-footer">
       <div class="social-link">
-        <a class="social-link__instagram"><img class="social-link__instagram-icon" src="img/icon-insta.svg" alt=""></a>
-        <a class="social-link__facebook"><img class="social-link__facebook-icon" src="img/icon-fb.svg" alt=""></a>
-        <a class="social-link__twitter"><img class="social-link__twitter-icon" src="img/icon-twitter.svg" alt=""></a>
+        <a class="social-link__instagram"><img class="social-link__instagram-icon" src="img/icon-insta.svg" alt="Инстаграм"></a>
+        <a class="social-link__facebook"><img class="social-link__facebook-icon" src="img/icon-fb.svg" alt="Фейсбук"></a>
+        <a class="social-link__twitter"><img class="social-link__twitter-icon" src="img/icon-twitter.svg" alt="Твиттер"></a>
       </div>
       <hr>
       <div class="developed-by">
