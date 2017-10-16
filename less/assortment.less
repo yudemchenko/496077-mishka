@@ -1,17 +1,19 @@
 .assortment{
+  display: flex;
+  flex-direction: column;
   &__item {
     padding-top: 1px;
+    display: flex;
+    justify-content: center;
   }
   &__item--interior {
     background-color: @l-green;
+    height: 103px;
   }
 
   &__item--toy {
     background-color: @d-green;
-  }
-
-  &__item--icon {
-    fill: @assortment-icon;
+    height: 103px;
   }
 
   &__item--name {
@@ -19,10 +21,12 @@
     font-size: 19px;
     line-height: 24px;
     padding-left: 30px;
+    font-weight: bold;
+    width: 130px;
   }
-
-  &__link {
-    text-decoration: none;
+  &__item--icon {
+    margin-left: auto;
+    margin-right: 30px;
   }
 }
 

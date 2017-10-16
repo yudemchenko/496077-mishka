@@ -1,14 +1,20 @@
 .product-card {
+  display: flex;
+  flex-direction: column;
   .margin();
   &__title {
+    display: flex;
+    flex-direction: column;
+  }
+  &__main {
     .h2();
   }
 
-  &__top {
+  &__note {
     color: @l-green;
     font-size: 17px;
     line-height: 20px;
-    font-weight: 800px;
+    font-weight: bold;
     text-transform: uppercase;
   }
 
@@ -19,9 +25,24 @@
   }
 
   &__characteristics {
+    width: 260px;
     font-size: 15px;
     line-height: 24px;
     color: @font-color;
+  }
+
+  &--parameter {
+    width: 95px;
+  }
+
+  &--value {
+    width: 165px;
+  }
+
+  &__point {
+    height: 40px;
+    border-bottom: 1px solid #ececec;
+    text-align: left;
   }
 
   &__price {

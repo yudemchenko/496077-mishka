@@ -60,23 +60,32 @@
 
       <section class="product-card">
 
-        <h2 class="product-card__title">Вязаные корзинки</h2>
-
-        <h3 class="product-card__top">Товар недели</h3>
+        <h2 class="product-card__title">
+        <span class="product-card__main">Вязаные корзинки</span>
+        <span class="product-card__note">Товар недели</span>
+        </h2>
         <p class="product-card__description">Экологически чистая пряжа, ручная работа. Доступна в шести расцветках, и трех размерах.</p>
 
-        <div class="product-card__characteristics">
-          <p class="product-card__characteristics product-card__characteristics--color">Цвет: "Тиффани"/серый</p>
-          <hr>
-          <p class="product-card__characteristics product-card__characteristics--width">Диаметр: 25 см</p>
-          <hr>
-          <p class="product-card__characteristics product-card__characteristics--height">Высота: 15 см</p>
-        </div>
+        <table class="product-card__characteristics">
+          <tr class="product-card__point">
+            <td class="product-card__point product-card--parameter">Цвет:</td>
+            <td class="product-card__point product-card--value">"Тиффани"/серый</td>
+          </tr>
+          <tr class="product-card__point">
+            <td class="product-card__point product-card--parameter">Диаметр:</td>
+            <td class="product-card__point product-card--value">25 см</td>
+          </tr>
+          <tr class="product-card__point">
+            <td class="product-card__point product-card--parameter">Высота:</td>
+            <td class="product-card__point product-card--value">15 см</td>
+          </tr>
+        </table>
 
         <img class="product-card__foto" src="img/triple-set-mobile@1x.jpg" alt="Размеры корзинок">
         <p class="product-card__price">Цена: 990 руб.</p>
 
         <button class="product-card__order">Заказать</button>
+        </section>
         <!--модальное окно-->
         <div class="add-to-order">
 
@@ -89,7 +98,6 @@
           <button class="add-to-order__buy">Добавить</button>
 
         </div>
-      </section>
 
       <section class="about-us">
 
