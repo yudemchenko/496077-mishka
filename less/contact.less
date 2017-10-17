@@ -1,15 +1,36 @@
 .contact {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   .margin();
   &__title {
     .h2();
+    width: 100%;
   }
   &__mail {
     color: @font-color;
     font-size: 15px;
     line-height: 30px;
+    width: 30%;
   }
+
+  &__mail-value {
+    color: @font-color;
+    width: 70%;
+    font-size: 15px;
+    line-height: 30px;
+  }
+
   &__addres {
     color: @font-color;
+    font-size: 15px;
+    line-height: 30px;
+    width: 30%;
+  }
+
+  &__addres-value {
+    color: @font-color;
+    width: 70%;
     font-size: 15px;
     line-height: 30px;
   }

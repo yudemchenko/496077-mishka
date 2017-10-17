@@ -24,9 +24,9 @@
             <a class="main-nav__link" href="form.html">Вязание на заказ</a>
           </li>
           <li class="main-nav__item main-nav--search-full">
-            <a class="main-nav__link main-nav--search-img" href="#">
-              <img class="main-nav__search" src="img/icon-search.svg" alt="Поиск">
-            </a>
+            <!--<a class="main-nav__link main-nav--search-img" href="#">
+            <img class="main-nav__search" src="img/icon-search.svg" alt="Поиск">
+            </a>-->
             <a class="main-nav__link main-nav--search" href="#">Поиск по сайту</a>
           </li>
           <li class="main-nav__item main-nav--basket">
@@ -40,23 +40,24 @@
     </header>
 
     <main class="page-main">
-    <div class="page-title">
-      <h1 class="page-title__header">Милые штуки ручной работы для дома</h1>
-    </div>
-      <section class="assortment">
-        <a class="assortment__link" href="#">
-          <div class="assortment__item assortment__item--interior">
-            <p class="assortment__item assortment__item--name">Предметы интерьера</p>
-            <img class="assortment__item assortment__item--icon" src="img/icon-interior.svg" alt="Интерьер">
+    
+    <section class="page-title">
+      <h1 class="page-title__header">Милые штуки ручной работы&nbsp;для дома</h1>
+      <div class="page-title__assortment">
+        <a class="page-title__assortment-link" href="#">
+          <div class="page-title__item page-title__item--interior">
+            <p class="page-title__item page-title__item--name">Предметы интерьера</p>
+            <img class="page-title__item page-title__item--icon" src="img/icon-interior.svg" alt="Интерьер">
           </div>
         </a>
-        <a class="assortment__link" href="#">
-          <div class="assortment__item assortment__item--toy">
-            <p class="assortment__item assortment__item--name">Детские игрушки</p>
-            <img class="assortment__item assortment__item--icon" src="img/icon-toy.svg" alt="Игрушки">
+        <a class="page-title__assortment-link" href="#">
+          <div class="page-title__item page-title__item--toy">
+            <p class="page-title__item page-title__item--name">Детские игрушки</p>
+            <img class="page-title__item page-title__item--icon" src="img/icon-toy.svg" alt="Игрушки">
           </div>
         </a>
-      </section>
+      </div>
+    </section>
 
       <section class="product-card">
 
@@ -86,7 +87,7 @@
 
         <button class="product-card__order">Заказать</button>
         </section>
-        <!--модальное окно-->
+        <!--модальное окно
         <div class="add-to-order">
 
           <h1 class="add-to-order__title">Добавить в корзину</h1>
@@ -98,6 +99,7 @@
           <button class="add-to-order__buy">Добавить</button>
 
         </div>
+        -->
 
       <section class="about-us">
 
@@ -138,21 +140,25 @@
           <p class="rewiew__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
           <b class="rewiew__caption">Анастасия Красильникова</b>
           <p class="rewiew__mail">@misssssiskras</p>
-          <button class="rewiew__left"><img class="rewiew__left--icon" src="img/icon-left-arrow.svg" alt="Лево"></button>
-          <button class="rewiew__right"><img class="rewiew__right--icon" src="img/icon-right-arrow.svg" alt="Право"></button>
+          <div class="rewiew__nav">
+            <button class="rewiew__nav rewiew__nav--left"><img class="rewiew__nav--left-icon" src="img/icon-left-arrow.svg" alt="Лево"></button>
+            <button class="rewiew__nav rewiew__nav--right"><img class="rewiew__nav--right-icon" src="img/icon-right-arrow.svg" alt="Право"></button>
+          </div>
       </section>
 
       <button class="contact-us">Написать</button>
 
       <section class="contact">
           <h2 class="contact__title">Контакты</h2>
-          <p class="contact__mail">email: info@mimimishkashop.ru</p>
-          <p class="contact__addres">адрес: г. Санкт-Петербург, ул. Большая Конюшенная, д.19/8, офис 101</p>
+          <p class="contact__mail">email:</p>
+          <p class="contact__mail-value">info@mimimishkashop.ru</p>
+          <p class="contact__addres">адрес:</p>
+          <p class="contact__addres-value">г. Санкт-Петербург, ул. Большая Конюшенная, д.19/8, офис 101</p>
       </section>
 
       <section class="interactive-map">
         <map id="navigation" name="navigation">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991043651577!2d30.3208946158674!3d59.93879418187627!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0KDQvtGB0YHQuNGPLCAxOTExODY!5e0!3m2!1sru!2sua!4v1507819305673" height="450" allowfullscreen></iframe>"
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991043651577!2d30.3208946158674!3d59.93879418187627!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0KDQvtGB0YHQuNGPLCAxOTExODY!5e0!3m2!1sru!2sua!4v1507819305673" height="450" allowfullscreen></iframe>
         </map>
       </section>
 
@@ -165,7 +171,6 @@
         <a class="social-link__facebook"><img class="social-link__facebook-icon" src="img/icon-fb.svg" alt="Фейсбук"></a>
         <a class="social-link__twitter"><img class="social-link__twitter-icon" src="img/icon-twitter.svg" alt="Твиттер"></a>
       </div>
-      <hr>
       <div class="developed-by">
         <b class="developed-by__text">Разработано</b>
         <img class="developed-by__icon" src="img/htmlacademy.svg" alt="">

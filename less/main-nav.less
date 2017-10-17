@@ -1,28 +1,51 @@
 .main-nav {
-  /* Временно для сетки */
+  padding-left: 0;
+  margin-bottom: 0;
   &__list {
     list-style: none;
-    display:flex;
-    flex-direction:column;
+    display: flex;
+    flex-direction: column;
+    margin-top: 0;
+    list-decoration: none;
   }
   &__logo-wrapper {
-  display:flex;
+    display: flex;
+    /*height: 79px;*/
+    border-bottom: 1px solid #ececec;
   }
   &__logo {
   flex-grow:1;
   text-align:center;
   }
+  &__logo-image {
+    padding-top: 20px;
+    padding-left: 55px;
+  }
+  &__toggle {
+    background: white;
+    border: 0;
+    margin-right: 30px;
+  }
   &__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     .menu-text();
+    height: 79px;
+    border-bottom: 1px solid #ececec;
   }
   &__link {
+    display: block;
     text-decoration: none;
+    color: black;
+    height: 79px;
   }
-  &__list {
-    list-decoration:none;
+  &--search-full {
+    background: url("../img/icon-search.svg");
+    background-repeat: no-repeat;
   }
   &--receive {
-        display:none;
+    display: none;
     }
 }
 

@@ -1,4 +1,6 @@
 .rewiew {
+  display: flex;
+  flex-direction: column;
   .margin();
   &__title {
     .h2();
@@ -16,6 +18,21 @@
   }
 
   &__mail {
-    .standart-text()
+    .standart-text();
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  &__nav {
+    display: flex;
+  }
+
+  &__nav--left,
+  &__nav--right {
+    width: 50%;
+    justify-content: center;
+    height: 52px;
+    background-color: white;
+    border: 1px solid #ececec;
   }
 }
