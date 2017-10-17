@@ -13,7 +13,9 @@
     color: black;
     font-weight: bold;
     text-align: center;
-    .margin();
+    padding-left: 30px;
+    padding-right: 30px;
+    margin: auto;
   }
 
   &__assortment {
@@ -52,11 +54,25 @@
 }
 
 @media (min-width: @tablet-width) {
-  .assortment {
+  .page-title {
+  height: 747px;
+  width: @tablet-width;
+  background-size: cover;
+  background-position-x: center;
+  margin-top: -80px;
+  &__header {
+    font-size: 43px;
+    line-height: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  &__assortment {
     display: flex;
     flex-direction: row;
-    &__link {
-      width: 50%;
+    justify-content: center;
+  }
+  &__assortment-link {
+      width: 334px;
     }
   }
 } 
@@ -70,10 +86,3 @@
     }
   }
 } 
-
-@media (min-width: @tablet-width) {
-  .page-title {
-    height: 627px;
-    width: @tablet-width;
-  }
-}

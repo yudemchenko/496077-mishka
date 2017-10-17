@@ -10,12 +10,13 @@
   }
   &__logo-wrapper {
     display: flex;
-    /*height: 79px;*/
     border-bottom: 1px solid #ececec;
+    width: 100%;
+    height: 79px;
   }
   &__logo {
-  flex-grow:1;
-  text-align:center;
+    flex-grow: 1;
+    text-align:center;
   }
   &__logo-image {
     padding-top: 20px;
@@ -31,19 +32,34 @@
     justify-content: center;
     align-items: center;
     .menu-text();
-    height: 79px;
     border-bottom: 1px solid #ececec;
   }
+
   &__link {
     display: block;
     text-decoration: none;
     color: black;
     height: 79px;
+    width: 100%;
+    padding-left: 75px;
+    padding-top: 28px;
+    box-sizing: border-box;
   }
+
   &--search-full {
     background: url("../img/icon-search.svg");
     background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: 30px;
   }
+
+  &--basket {
+    background: url("../img/icon-cart.svg");
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: 30px;
+  }
+
   &--receive {
     display: none;
     }
@@ -52,37 +68,56 @@
 @media (min-width: @tablet-width) {
   .main-nav {
       &__list {
-      flex-direction:row;
-      flex-wrap:wrap;
+      flex-direction: row;
+      flex-wrap: wrap;
       }
     &--search {
-        display:none;
+        display: none;
     }
     &__toggle {
-        display:none;
+        display:  none;
     }
+	&__item {
+	  border: 0;
+	}
     &__logo-wrapper {
-        order:-10;
-        flex-basis:371px;
-        flex-grow:5;
-        flex-shrink:1;
+        display: block;
+        order: -10;
+        flex-basis: 371px;
+        flex-grow: 5;
+        flex-shrink: 1;
+    }
+    &--catalog {
+      font-size: 15px;
+      line-height: 24px;
+      font-weight: bold;
+    }
+    &--knitting {
+      font-size: 15px;
+      line-height: 24px;
+      font-weight: bold;
     }
     &--search-full {
-        order:-9;
-    }
-    &--search-img {
-        padding:35px;
+        order: -9;
+        width: 83px;
+        border-left: 1px solid #ececec;
+		border-bottom: 1px solid #ececec;
     }
     &--basket {
-        order:-8;
-        flex-grow:3;
-        flex-shrink:1;
-        flex-basis:300px;
+        order: -8;
+        flex-grow: 3;
+        flex-shrink: 1;
+        flex-basis: 300px;
+        border-left: 1px solid #ececec;
+		border-bottom: 1px solid #ececec;
     }
     &--receive {
-        width:50%;
-        text-align:right;
-        display:block;
+        flex-basis: 233px;
+        text-align: right;
+        display: block;
+        font-size: 15px;
+        line-height: 24px;
+        font-weight: normal;
     }
   }
 }
